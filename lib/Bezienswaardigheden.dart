@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'GoogleMaps.dart';
 class Bezienswaardigheden extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,7 +9,9 @@ class Bezienswaardigheden extends StatelessWidget {
         backgroundColor: Colors.green[500],
         title: Text('Bezienswaardigheden'),
       ),
-      body: Center(),
+      body: MapController(kleur: Colors.green[400], navigatie: false, mapType: MapType.hybrid),
     );
   }
 }
+
+
